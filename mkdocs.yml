@@ -1,4 +1,5 @@
 site_name: SINETStream_md
+site_url: https://onukiyuma.github.io/SINETStream_md
 
 theme:
     feature:
