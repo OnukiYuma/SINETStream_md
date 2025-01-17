@@ -1,5 +1,14 @@
 site_name: My Docs
 
+theme:
+    feature:
+        tabs: true
+    language: ja
+    name: material
+    palette:
+        accent: Green
+        primary: Green
+
 - plugins:
       - i18n:
             default_language: ja
