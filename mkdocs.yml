@@ -9,9 +9,18 @@ theme:
         accent: Green
         primary: Green
 
-- plugins:
+plugins:
       - i18n:
-            default_language: ja
+            docs_structure: suffix
+            fallback_to_default: true
+            reconfigure_material: true
+            reconfigure_search: true
             languages:
-                ja: Japanese
-                en: English
+                - locale: ja
+                  default: true
+                  name: 日本語
+                  build: true
+                - locale: en
+                  default: false
+                  name: English
+                  build: true
