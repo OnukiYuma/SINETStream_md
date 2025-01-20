@@ -8,21 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://onukiyuma.github.io/SINETStream_md/en/">
+        <link rel="canonical" href="https://onukiyuma.github.io/SINETStream_md/en/tutorial/">
       
       
+        <link rel="prev" href="../docm/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+        <link rel="next" href="../tutorial-android/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Index - SINETStream_md</title>
+        <title>Python/Java - SINETStream_md</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-the-sinetstream" class="md-skip">
+        <a href="#quick-start-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="SINETStream_md" class="md-header__button md-logo" aria-label="SINETStream_md" data-md-component="logo">
+    <a href="../.." title="SINETStream_md" class="md-header__button md-logo" aria-label="SINETStream_md" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Python/Java
             
           </span>
         </div>
@@ -117,13 +121,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/SINETStream_md/" hreflang="ja" class="md-select__link">
+            <a href="../../tutorial/" hreflang="ja" class="md-select__link">
               日本語
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/SINETStream_md/en/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -160,7 +164,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="SINETStream_md" class="md-nav__button md-logo" aria-label="SINETStream_md" data-md-component="logo">
+    <a href="../.." title="SINETStream_md" class="md-nav__button md-logo" aria-label="SINETStream_md" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -178,7 +182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docm/" class="md-nav__link">
+      <a href="../docm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -195,8 +199,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -206,13 +212,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -226,7 +230,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Quick Start Guide
@@ -237,10 +241,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="tutorial/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python/Java
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -249,6 +273,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-to-docker-engine-installation-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links to Docker Engine installation instructions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the tutorial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -261,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorial-android/" class="md-nav__link">
+      <a href="../tutorial-android/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -319,6 +405,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -327,45 +415,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-sinetstream" class="md-nav__link">
+  <a href="#preface" class="md-nav__link">
     <span class="md-ellipsis">
-      What is the SINETStream
+      Preface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sinetstream-use-case" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      SINETStream Use Case
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-to-docker-engine-installation-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links to Docker Engine installation instructions
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-of-the-sinetstream" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use of the SINETStream
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#live-demo-using-the-sinetstream" class="md-nav__link">
+  <a href="#running-the-tutorial" class="md-nav__link">
     <span class="md-ellipsis">
-      Live demo using the SINETStream
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    <span class="md-ellipsis">
-      About
+      Running the tutorial
     </span>
   </a>
   
@@ -385,8 +470,6 @@
                 
                   
 
-
-  <h1>Index</h1>
 
 <!--
 Copyright (C) 2020 National Institute of Informatics
@@ -409,55 +492,62 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<h2 id="what-is-the-sinetstream">What is the SINETStream</h2>
-<p>It is required to collect data from sensors and other devices distributed over a wide area network without loss for reliable analysis in such research areas as environmental measurement, biological observation, and Internet of things (IoT).
-However, advanced knowledge and skills about networking are required to develop a program that collects and analyzes data distributed over a wide area network.
-It is difficult for average researchers who want to focus on their own research topics.
-The SINETStream is a software package that makes it easy for researchers to reliably collect and analyze data via wide area networks without loss.
-The SINETStream provides such functions as follows:</p>
+<p><a href="./">日本語</a></p>
+<h1 id="quick-start-guide">Quick Start Guide</h1>
+<h2 id="preface">Preface</h2>
+<p>In this tutorial you can try the following things.</p>
 <ul>
-<li>Write data collected from sensors etc. to cloud servers or to on-premises servers in universities etc.</li>
-<li>Read the data stored in the servers into your analysis program.</li>
+<li>Installing <code>SINETStream</code></li>
+<li>Send/receive messages to/from a messaging system (Kafka or MQTT) via <code>SINETStream</code>.</li>
 </ul>
-<p>A researcher can easily develop his/her own programs that collect and analyze data distributed over a wide area network using the SINETStream API.
-Research data may contain sensitive information.
-The SINETStream also supports authentication of sensor devices and encryption of data and communication to enable a secure data collection.</p>
-<p><img alt="appearance of the SINETStream" src="images/sinetstream-00.png" /></p>
-<div align="center">
-<br/>
-<a href="https://www.youtube.com/watch?v=Z0wlUi4lr6c">Introduction of Wide Area Data Collection Infrastructure (Mobile SINET) and the SINETStream</a>
-<br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z0wlUi4lr6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<h2 id="sinetstream-use-case">SINETStream Use Case</h2>
-<div align="center">
-<br/>
-<a href="https://www.youtube.com/watch?v=eO9mtqAKENw">Mobile Animal Laboratory [Bio-Innovation Research Center(BIRC), Tokushima Univ.]</a>
-<br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eO9mtqAKENw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<h2 id="use-of-the-sinetstream">Use of the SINETStream</h2>
-<p>To use SINETStream, please complete a user registration.
-Registered user will be notified of new SINETStream releases, bug fixes, FAQ, etc.
-Please register from the link below.</p>
+<p>The following configuration will be established through this tutorial.</p>
+<p><img alt="configuration" src="images/tutorial-000.png" /></p>
 <ul>
-<li><a href="https://reg.nii.ac.jp/m/sinetstream_user_registration">User registration &amp; contact</a></li>
+<li><code>Writer</code> sends messages to <code>Broker</code> via <code>SINETStream</code></li>
+<li><code>Reader</code> receives messages from <code>Broker</code> via <code>SINETStream</code></li>
+<li><code>Broker</code> aggregates and delivers messages from <code>Writer</code> to <code>Reader</code>, and separates the endpoints from each other.</li>
 </ul>
-<h2 id="live-demo-using-the-sinetstream">Live demo using the SINETStream</h2>
+<p>A Docker <a href="https://hub.docker.com/r/sinetstream/tutorial">container image</a> is provided to easily prepare the above configuration.
+By using this container image, you can easily set up the Kafka broker and the MQTT broker (<code>Mosquitto</code>).</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To complete this tutorial, you must meet the following requirements.</p>
 <ul>
-<li><a href="docs/livedemo/livedemo.en.md">Live demo of the SINETStream</a></li>
+<li>The execution environment, e.g., your laptop computer, must be connected to the Internet for downloading libraries and Docker containers.</li>
+<li>Docker Engine must be installed in the execution environment for preparing the execution environment of <code>Broker</code> and <code>SINETStream</code>.</li>
 </ul>
-<h2 id="about">About</h2>
+<p>If Docker Engine is not installed in the execution environment, please refer to the Docker's official website and install it.
+The following links to installation instructions for Docker Engine on major platforms are provided for reference.</p>
+<h3 id="links-to-docker-engine-installation-instructions">Links to Docker Engine installation instructions</h3>
+<p>Below are the official Docker site that shows the installation procedure on typical platforms.</p>
 <ul>
-<li><a href="https://sinetstream.net/">SINETStream https://sinetstream.net/</a> <br></li>
-<li>A. Takefusa, J. Sun, I. Fujiwara, H. Yoshida, K. Aida and C. Pu, <br>
-"SINETStream: Enabling Research IoT Applications with Portability, Security and Performance Requirements,"
-2021 IEEE 45th Annual Computers, Software, and Applications Conference (COMPSAC), pp. 482-492, 2021.
-doi: 10.1109/COMPSAC51774.2021.00073.</li>
-<li><a href="https://ccrd.nii.ac.jp/publications/en.html#sinetstream">Publications</a></li>
+<li>macOS<ul>
+<li><a href="https://docs.docker.com/docker-for-mac/install/">Install Docker Desktop on Mac</a></li>
 </ul>
+</li>
+<li>Microsoft Windows 10<ul>
+<li><a href="https://docs.docker.com/docker-for-windows/install/">Install Docker Desktop on Windows</a></li>
+</ul>
+</li>
+<li>CentOS(x86_64)<ul>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/centos/">Get Docker Engine - Community for CentOS</a></li>
+</ul>
+</li>
+</ul>
+<p>For other operating systems, please refer to the links listed on the supported platforms on the official Docker website.</p>
+<h2 id="running-the-tutorial">Running the tutorial</h2>
+<p>Two procedures with different component arrangements are provided.</p>
+<ul>
+<li><a href="TUTORIAL-STEP1.en.md">STEP1</a><ul>
+<li>Setup <code>Writer</code>, <code>Broker</code>, and <code>Reader</code> together in a single machine</li>
+</ul>
+</li>
+<li><a href="TUTORIAL-STEP2.en.md">STEP2</a><ul>
+<li>Setup <code>Writer</code>, <code>Broker</code>, and <code>Reader</code> on each separate machines</li>
+</ul>
+</li>
+</ul>
+<p>Each step is described on the linked page above.
+The two steps are independent, so you can try one or both of them.</p>
 
 
 
@@ -504,10 +594,10 @@ doi: 10.1109/COMPSAC51774.2021.00073.</li>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.sections"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
