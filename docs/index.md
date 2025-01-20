@@ -19,8 +19,6 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-[English](index.en.md)
-
 ## News
 
 **お知らせ `2024-03-29`** [SINETStreamの1.9版を公開](docs/news/20240329-release_v19.md)いたしました。<br/>
@@ -48,7 +46,7 @@ SINETStreamは、広域ネットワークを介してデータを欠損なく確
 研究者は、SINETStreamが提供するAPIを利用すると、広域ネットワークを介したデータの収集・解析を行うためのプログラムを容易に開発することができます。
 また、研究に用いられるデータには機微な情報が含まれる場合もありますが、SINETStreamには通信やデータの暗号化、センサー等のデバイスの認証を行う機能も含んでいるため、安全な広域データ収集を実現できます。
 
-![SINETStreamの概観](docs/images/sinetstream-00.png)
+![SINETStreamの概観](images/sinetstream-00.png)
 
 <div align="center">
 <br/>

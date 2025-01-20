@@ -19,8 +19,6 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-[日本語](index.md)
-
 ## What is the SINETStream
 
 It is required to collect data from sensors and other devices distributed over a wide area network without loss for reliable analysis in such research areas as environmental measurement, biological observation, and Internet of things (IoT).
@@ -36,7 +34,7 @@ A researcher can easily develop his/her own programs that collect and analyze da
 Research data may contain sensitive information.
 The SINETStream also supports authentication of sensor devices and encryption of data and communication to enable a secure data collection.
 
-![appearance of the SINETStream](docs/images/sinetstream-00.en.png)
+![appearance of the SINETStream](images/sinetstream-00.en.png)
 
 <div align="center">
 <br/>
