@@ -6,22 +6,37 @@ theme:
         tabs: true
     language: ja
     name: material
-    palette:
-        accent: Green
-        primary: Green
+    features:
+      - navigation.expand
+      - navigation.sections
+
+nav:
+    - ホーム: index.md
+    - ドキュメント: docm.md
+    - クイックスタートガイド: 
+        - Python/Java版: tutorial/index.md
+        - Android版: tutorial-android/index.md
+    - SINETStreamデモパッケージ: https://github.com/nii-gakunin-cloud/sinetstream-demo
 
 plugins:
-      - i18n:
-            docs_structure: suffix
-            fallback_to_default: true
-            reconfigure_material: true
-            reconfigure_search: true
-            languages:
-                - locale: ja
-                  default: true
-                  name: 日本語
-                  build: true
-                - locale: en
-                  default: false
-                  name: English
-                  build: true
+    - i18n:
+        docs_structure: suffix
+        fallback_to_default: true
+        reconfigure_material: true
+        reconfigure_search: true
+        languages:
+            - locale: ja
+              default: true
+              name: 日本語
+              build: true
+            - locale: en
+              default: false
+              name: English
+              build: true
+              nav_translations:
+                  ホーム: Home
+                  ドキュメント: Document
+                  クイックスタートガイド: Quick Start Guide
+                  Python/Java版: Python/Java
+                  Android版: Android
+                  SINETStreamデモパッケージ: SINETStream Demo Package
