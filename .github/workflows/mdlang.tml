@@ -1,0 +1,2 @@
+- name: Create LangPages
+  run: docker exec mkdocs python scripts/multi_langpage.py
