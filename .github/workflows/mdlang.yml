@@ -1,2 +1,13 @@
-  name: Create LangPages
-  run: docker exec mkdocs python scripts/multi_langpage.py
+name: Python application
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Create LangPages
+              run: docker exec mkdocs python scripts/multi_langpage.py
