@@ -2,10 +2,7 @@ name: Python application
 
 on: push
 
-jobs:
-    build:
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Create LangPages
-              run: docker exec mkdocs python scripts/multi_langpage.py
+jobs
+    steps:
+        - name: Create LangPages
+          run: docker exec mkdocs python scripts/multi_langpage.py
