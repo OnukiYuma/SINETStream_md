@@ -8,4 +8,5 @@ jobs:
 
         steps:
             - name: Create LangPages
-              run: exec mkdocs python scripts/multi_langpage.py
+              run: pip install mkdocs
+              run: mkdocs python scripts/multi_langpage.py
