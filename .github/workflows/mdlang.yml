@@ -7,6 +7,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Create LangPages
+            - name: Install Mkdocs
               run: pip install mkdocs
+
+            - name: Create LangPages
               run: mkdocs python scripts/multi_langpage.py
