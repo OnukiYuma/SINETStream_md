@@ -11,4 +11,4 @@ jobs:
               run: pip install mkdocs
 
             - name: Create LangPages
-              run: python scripts/multi_langpage.py
+              run: python /home/runner/work/SINETStream_md/scripts/multi_langpage.py
