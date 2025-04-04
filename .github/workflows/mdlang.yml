@@ -10,5 +10,8 @@ jobs:
             - name: Install Mkdocs
               run: pip install mkdocs
 
+            - name: Checkout
+              uses: actions/checkout@v2
+
             - name: Create LangPages
               run: python multi_langpage.py
