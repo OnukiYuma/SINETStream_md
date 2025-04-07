@@ -98,4 +98,4 @@ if __name__ == '__main__':
         sampleFile = r"D:\docs\webpages\reincarnation_tech\docs\10_Programming\99_Documentation\mult_lang.mdlang"
         createMultiLangMd(sampleFile)
     else:
-        create_pages(os.getcwd() + "/docs")
+        create_pages(os.getcwd() + "/docs/news")
