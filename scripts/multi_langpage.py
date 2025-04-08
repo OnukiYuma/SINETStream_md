@@ -38,12 +38,9 @@ def createMultiLangMd(path):
     data = utils.getHeaderYaml(path)
     docs = utils.getMainDocs(path)
 
-    print(data)
-    print(docs)
-
     exportDocs = {'ja': createHeader(data, 'ja')}
 
-    print(docs)
+    print(exportDocs)
 
     if data and 'multi_lang' not in data:
         # multi_langフラグがないものはなにもしない
