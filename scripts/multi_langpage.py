@@ -38,7 +38,12 @@ def createMultiLangMd(path):
     data = utils.getHeaderYaml(path)
     docs = utils.getMainDocs(path)
 
+    print(data)
+    print(docs)
+
     exportDocs = {'ja': createHeader(data, 'ja')}
+
+    print(docs)
 
     if data and 'multi_lang' not in data:
         # multi_langフラグがないものはなにもしない
@@ -46,6 +51,8 @@ def createMultiLangMd(path):
     elif data:
         for lang in data['multi_lang']:
             exportDocs[lang] = createHeader(data, lang)
+
+    print(lang)
 
     currentLang = None
 
@@ -70,10 +77,16 @@ def createMultiLangMd(path):
                 for l in exportDocs.keys():
                     exportDocs[l].append(re.sub("\n$", "", i))
 
+    print(exportDocs)
+
     # 書き出し
 
     bn, ext = os.path.splitext(os.path.basename(path))
     dirName = os.path.dirname(path)
+
+    print(bn)
+    print(ext)
+    print(dirName)
 
     for i in exportDocs.keys():
         with codecs.open(f"{dirName}/{bn}.{i}.md", 'w', 'utf-8') as f:
@@ -98,4 +111,4 @@ if __name__ == '__main__':
         sampleFile = r"D:\docs\webpages\reincarnation_tech\docs\10_Programming\99_Documentation\mult_lang.mdlang"
         createMultiLangMd(sampleFile)
     else:
-        create_pages(os.getcwd() + "/docs/news")
+        create_pages(os.getcwd() + "/docs")
