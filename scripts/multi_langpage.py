@@ -49,8 +49,6 @@ def createMultiLangMd(path):
         for lang in data['multi_lang']:
             exportDocs[lang] = createHeader(data, lang)
 
-    print(lang)
-
     currentLang = None
 
     for i in docs:
@@ -74,16 +72,10 @@ def createMultiLangMd(path):
                 for l in exportDocs.keys():
                     exportDocs[l].append(re.sub("\n$", "", i))
 
-    print(exportDocs)
-
     # 書き出し
 
     bn, ext = os.path.splitext(os.path.basename(path))
     dirName = os.path.dirname(path)
-
-    print(bn)
-    print(ext)
-    print(dirName)
 
     for i in exportDocs.keys():
         with codecs.open(f"{dirName}/{bn}.{i}.md", 'w', 'utf-8') as f:
