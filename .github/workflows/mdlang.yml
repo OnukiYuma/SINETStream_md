@@ -1,0 +1,20 @@
+name: Python application
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+#            - name: Install Mkdocs
+#              run: pip install mkdocs
+
+            - name: Install Mkdocs-material
+              run: pip install mkdocs-material
+
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Create LangPages
+              run: python scripts/multi_langpage.py
