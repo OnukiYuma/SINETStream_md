@@ -7,14 +7,14 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-#            - name: Install Mkdocs
-#              run: pip install mkdocs
+            - name: Install Mkdocs
+              run: pip install mkdocs
 
-#            - name: Install Mkdocs-material
-#              run: pip install mkdocs-material
+            - name: Install Mkdocs-material
+              run: pip install mkdocs-material
 
-#            - name: Install Mkdocs-static-i18n
-#              run: pip install mkdocs-static-i18n
+            - name: Install Mkdocs-static-i18n
+              run: pip install mkdocs-static-i18n
 
             - name: Checkout
               uses: actions/checkout@v2
