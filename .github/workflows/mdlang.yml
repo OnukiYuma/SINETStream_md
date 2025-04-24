@@ -9,7 +9,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
 #            - name: Install Mkdocs
 #              run: |
@@ -20,10 +20,10 @@ jobs:
             - name: Create LangPages
               run: python scripts/multi_langpage.py
 
-#            - name: Change Directory and List Files
-#              run: |
-#                cd docs/news
-#                ls -al
+            - name: List
+              run: ls -al
 
-#            - name: List
-#              run: ls -Ral
+            - name: Change Directory and List Files
+              run: |
+                cd docs/news
+                ls -al
