@@ -22,7 +22,7 @@ jobs:
 #              run: python scripts/multi_langpage.py
 
             - name: Change Directory
-              run: cd ../../../../
+              run: cd ..
 
             - name: Print Working Directory
               run: pwd
