@@ -28,13 +28,8 @@ jobs:
 #            - name: List
 #              run: ls -Ral
 
-            - name: Print working directory
-              run: |
-                pwd
-                ls -al
-
             - name: Change Directory and List Files
               run: |
-                cd /home/runner/work/SINETStream_md
+                cd /home/runner/work
                 pwd
                 ls -al
