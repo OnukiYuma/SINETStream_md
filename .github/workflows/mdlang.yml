@@ -30,15 +30,10 @@ jobs:
 
             - name: Change Directory and List Files1
               run: |
-                cd /home/runner/work
+                cd /home/runner/work/src/SINETStream_md
                 ls -al
 
             - name: Change Directory and List Files2
               run: |
-                cd /usr/local/bin
-                ls -al
-
-            - name: Change Directory and List Files3
-              run: |
-                cd /usr/local/src
+                cd /home/runner/work/src/SINETStream_md/SINETStream_md
                 ls -al
