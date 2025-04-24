@@ -21,10 +21,10 @@ jobs:
               run: python scripts/multi_langpage.py
 
             - name: Change Directory and List Files
-              run: |
-                pwd
+               run: ls -al
+#              run: |
 #                cd docs/news
-                ls -al
+#                ls -al
 
 #            - name: List
 #              run: ls -Ral
