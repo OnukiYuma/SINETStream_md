@@ -7,18 +7,33 @@ on:
 
 jobs:
 #    build:
-    deploy:
-        runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-#            - name: Install Mkdocs
-#              run: |
-#                pip install mkdocs
-#                pip install mkdocs-material
-#                pip install mkdocs-static-i18n
+#     - name: Install Mkdocs
+#       run: |
+#         pip install mkdocs
+#         pip install mkdocs-material
+#         pip install mkdocs-static-i18n
 
-            - name: Create LangPages
-              run: python scripts/multi_langpage.py
+      - name: Create LangPages
+        run: python scripts/multi_langpage.py
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+      - name: Add and Commit Changes
+        run: |
+          git add .
+          git commit -m "Add generated files"
+
+      - name: Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push origin main
