@@ -25,7 +25,7 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "OnukiYuma"
+          git config --global user.name "y.onuki"
           git config --global user.email "onuki@nii.ac.jp"
 
       - name: Add and Commit Changes
