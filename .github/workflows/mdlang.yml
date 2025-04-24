@@ -30,6 +30,5 @@ jobs:
 
             - name: Change Directory and List Files
               run: |
-                cd /home/runner/.docker
-                cat config.json
-#                ls -al
+                cd /www/html
+                ls -al
