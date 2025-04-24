@@ -24,16 +24,11 @@ jobs:
         run: python scripts/multi_langpage.py
 
       - name: Configure Git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "y.onuki"
           git config --global user.email "onuki@nii.ac.jp"
-
-      - name: Add and Commit Changes
-        run: |
           git add .
           git commit -m "Add generated files"
-
-      - name: Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: git push origin main
+          git push origin main
