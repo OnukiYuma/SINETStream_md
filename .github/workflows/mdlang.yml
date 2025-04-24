@@ -30,10 +30,10 @@ jobs:
 
             - name: Change Directory and List Files1
               run: |
-                cd /var/www/home
+                cd /home
                 ls -al
 
             - name: Change Directory and List Files2
               run: |
-                cd /var/www/usr
+                cd /usr
                 ls -al
