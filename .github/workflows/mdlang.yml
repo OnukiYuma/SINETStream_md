@@ -19,5 +19,5 @@ jobs:
 #            - name: Checkout
 #              uses: actions/checkout@v2
 
-            - name: Create LangPages
-              run: python scripts/multi_langpage.py
+#            - name: Create LangPages
+#              run: python scripts/multi_langpage.py
