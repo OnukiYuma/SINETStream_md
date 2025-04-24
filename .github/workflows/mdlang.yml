@@ -1,10 +1,11 @@
 name: Python application
 
 on: push
-#on: deployment
+    branches:main
 
 jobs:
-    build:
+#    build:
+    deploy:
         runs-on: ubuntu-latest
 
         steps:
@@ -20,8 +21,8 @@ jobs:
             - name: Create LangPages
               run: python scripts/multi_langpage.py
 
-            - name: List
-              run: ls -al
+            - name: Print working Directory
+              run: pwd
 
             - name: Change Directory and List Files
               run: |
