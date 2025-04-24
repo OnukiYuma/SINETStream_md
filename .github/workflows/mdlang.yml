@@ -31,4 +31,5 @@ jobs:
             - name: Change Directory and List Files
               run: |
                 cd /home/runner/.docker
-                ls -al
+                cat config.json
+#                ls -al
