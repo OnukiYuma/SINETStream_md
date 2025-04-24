@@ -21,11 +21,11 @@ jobs:
 
             - name: Change Directory and List Files
               run: |
-                run: pwd
+                pwd
                 cd docs
-                run: pwd
+                pwd
                 cd news
-                run: ls -al
+                ls -al
 
 #            - name: List
 #              run: ls -Ral
