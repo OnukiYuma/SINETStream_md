@@ -4,18 +4,17 @@ on: push
 
 jobs:
     build:
-#        runs-on: ubuntu-latest
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Checkout
               uses: actions/checkout@v2
 
-            - name: Install Mkdocs
-              run: |
-                pip install mkdocs
-                pip install mkdocs-material
-                pip install mkdocs-static-i18n
+#            - name: Install Mkdocs
+#              run: |
+#                pip install mkdocs
+#                pip install mkdocs-material
+#                pip install mkdocs-static-i18n
 
             - name: Create LangPages
               run: python scripts/multi_langpage.py
