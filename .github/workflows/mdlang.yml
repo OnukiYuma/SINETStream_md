@@ -23,5 +23,5 @@ jobs:
 
             - name: test
               run: |
-                PWD
+                pwd
                 ls -R
