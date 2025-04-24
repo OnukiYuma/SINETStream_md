@@ -21,11 +21,11 @@ jobs:
 #            - name: Create LangPages
 #              run: python scripts/multi_langpage.py
 
-#            - name: Print Working Directory
-#              run: pwd
-
             - name: Change Directory
               run: cd ../../../../
+
+            - name: Print Working Directory
+              run: pwd
 
             - name: List
 #              run: ls -Ral
