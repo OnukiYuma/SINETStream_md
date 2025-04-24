@@ -28,8 +28,20 @@ jobs:
 #            - name: List
 #              run: ls -Ral
 
+            - name: Change Directory and List Files1
+              run: |
+                cd /home/runner/work/_temp/_github_workflow
+                pwd
+                ls -al
+
             - name: Change Directory and List Files2
               run: |
-                cd /home/runner/work/_PipelineMapping/OnukiYuma/SINETStream_md
+                cd /home/runner/work/_temp/_runner_file_commands
+                pwd
+                ls -al
+
+            - name: Change Directory and List Files3
+              run: |
+                cd /home
                 pwd
                 ls -al
