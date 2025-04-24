@@ -40,8 +40,6 @@ def createMultiLangMd(path):
 
     exportDocs = {'ja': createHeader(data, 'ja')}
 
-    print(exportDocs)
-
     if data and 'multi_lang' not in data:
         # multi_langフラグがないものはなにもしない
         return
@@ -73,12 +71,14 @@ def createMultiLangMd(path):
                     exportDocs[l].append(re.sub("\n$", "", i))
 
     # 書き出し
-
     bn, ext = os.path.splitext(os.path.basename(path))
     dirName = os.path.dirname(path)
 
     for i in exportDocs.keys():
-        with codecs.open(f"{dirName}/{bn}.{i}.md", 'w', 'utf-8') as f:
+        if i != "ja":
+            bn = bn + "." + i
+
+        with codecs.open(f"{dirName}/{bn}.md", 'w', 'utf-8') as f:
             f.write("\n".join(exportDocs[i]))
 
 
@@ -100,4 +100,4 @@ if __name__ == '__main__':
         sampleFile = r"D:\docs\webpages\reincarnation_tech\docs\10_Programming\99_Documentation\mult_lang.mdlang"
         createMultiLangMd(sampleFile)
     else:
-        create_pages(os.getcwd() + "/docs")
+        create_pages(os.getcwd())

@@ -22,10 +22,7 @@ jobs:
 
             - name: Change Directory and List Files
               run: |
-                pwd
-                cd docs
-                pwd
-                cd news
+                cd docs/news
                 ls -al
 
 #            - name: List
