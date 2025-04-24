@@ -22,11 +22,3 @@ jobs:
 
             - name: Create LangPages
               run: python scripts/multi_langpage.py
-
-            - name: Print working Directory
-              run: pwd
-
-            - name: Change Directory and List Files
-              run: |
-                cd docs/news
-                ls -al
