@@ -28,5 +28,8 @@ jobs:
 #            - name: List
 #              run: ls -Ral
 
+            - name: Docker Compose
+              run: docker-compose -f docker/docker-compose.yml up --build -d
+
             - name: Create LangPages
-              run: docker exec python scripts/multi_langpage.py
+              run: docker exec mkdocs python scripts/multi_langpage.py
