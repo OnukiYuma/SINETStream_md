@@ -23,7 +23,13 @@ jobs:
 
             - name: Change Directory and List Files
               run: |
-                cd ../../../..
+                cd ..
+                run: pwd
+                cd ..
+                run: pwd
+                cd ..
+                run: pwd
+                cd ..
                 run: pwd
                 run: ls -al
 
