@@ -30,10 +30,15 @@ jobs:
 
             - name: Change Directory and List Files1
               run: |
-                cd /home
+                cd /home/runner
                 ls -al
 
             - name: Change Directory and List Files2
               run: |
-                cd /usr
+                cd /usr/local
+                ls -al
+
+            - name: Change Directory and List Files3
+              run: |
+                cd /usr/src
                 ls -al
