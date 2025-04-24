@@ -28,12 +28,5 @@ jobs:
 #            - name: List
 #              run: ls -Ral
 
-            - name: Change Directory and List Files1
-              run: |
-                cd /home/runner/work/SINETStream_md
-                ls -al
-
-            - name: Change Directory and List Files2
-              run: |
-                cd /home/runner/work/SINETStream_md/SINETStream_md
-                ls -al
+            - name: Create LangPages
+              run: docker exec python scripts/multi_langpage.py
