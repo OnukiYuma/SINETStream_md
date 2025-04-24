@@ -1,6 +1,7 @@
-name: Python application
+name: Deploy to GitHub Pages
 
-on: push
+on: 
+  push:
     branches:
       - main
 
