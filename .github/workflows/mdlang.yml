@@ -21,8 +21,10 @@ jobs:
 
             - name: Change Directory and List Files
               run: |
-                cd site/news
                 run: pwd
+                cd docs
+                run: pwd
+                cd news
                 run: ls -al
 
 #            - name: List
