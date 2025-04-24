@@ -21,7 +21,8 @@ jobs:
 #            - name: Create LangPages
 #              run: python scripts/multi_langpage.py
 
-            - name: test
-              run: |
-                pwd
-                ls -R
+            - name: Print Working Directory
+              run: pwd
+
+            - name: LS
+              run: ls -R
