@@ -1,15 +1,15 @@
 name: Python application
 
-#on: push
-on: deployment
+on: push
+#on: deployment
 
 jobs:
     build:
         runs-on: ubuntu-latest
 
         steps:
-#              uses: actions/checkout@v2
-#            - name: Checkout
+            - name: Checkout
+              uses: actions/checkout@v2
 
 #            - name: Install Mkdocs
 #              run: |
@@ -17,10 +17,10 @@ jobs:
 #                pip install mkdocs-material
 #                pip install mkdocs-static-i18n
 
-#            - name: Create LangPages
-#              run: python scripts/multi_langpage.py
+            - name: Create LangPages
+              run: python scripts/multi_langpage.py
 
-#            - name: Change Directory and List Files
+            - name: Change Directory and List Files
               run: |
                 pwd
 #                cd docs/news
