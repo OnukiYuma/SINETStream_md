@@ -30,13 +30,13 @@ jobs:
 
             - name: Change Directory and List Files1
               run: |
-                cd /home/runner/work/_PipelineMapping
+                cd /home/runner/work/_PipelineMapping/OnukiYuma
                 pwd
                 ls -al
 
             - name: Change Directory and List Files2
               run: |
-                cd /home/runner/work/_tem
+                cd /home/runner/work/_temp
                 pwd
                 ls -al
 
