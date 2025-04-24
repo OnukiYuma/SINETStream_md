@@ -28,20 +28,7 @@ jobs:
 #            - name: List
 #              run: ls -Ral
 
-            - name: Change Directory and List Files1
+            - name: Change Directory and List Files
               run: |
-                cd /home/runner/work/_temp/_github_workflow
-                pwd
-                ls -al
-
-            - name: Change Directory and List Files2
-              run: |
-                cd /home/runner/work/_temp/_runner_file_commands
-                pwd
-                ls -al
-
-            - name: Change Directory and List Files3
-              run: |
-                cd /home
-                pwd
+                cd /home/runner/.docker
                 ls -al
