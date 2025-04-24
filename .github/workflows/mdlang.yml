@@ -15,18 +15,20 @@ jobs:
 #            - name: Install Mkdocs-static-i18n
 #              run: pip install mkdocs-static-i18n
 
-            - name: Checkout
-              uses: actions/checkout@v2
+#            - name: Checkout
+#              uses: actions/checkout@v2
 
 #            - name: Create LangPages
 #              run: python scripts/multi_langpage.py
 
-            - name: Change Directory
-              run: cd site
+            - name: Change Directory and List Files
+              run: |
+                cd ../../../..
+                run: pwd
+                run: ls -al
 
-            - name: Print Working Directory
-              run: pwd
+#            - name: Print Working Directory
+#              run: pwd
 
-            - name: List
+#            - name: List
 #              run: ls -Ral
-              run: ls -al
