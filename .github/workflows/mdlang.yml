@@ -29,10 +29,12 @@ jobs:
 #              run: ls -Ral
 
             - name: Print working directory
-              run: pwd
+              run: |
+                pwd
+                ls -al
 
             - name: Change Directory and List Files
               run: |
-                cd /github/workspace
+                cd /home/runner/work/SINETStream_md
                 pwd
                 ls -al
