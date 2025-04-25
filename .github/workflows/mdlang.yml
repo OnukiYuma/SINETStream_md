@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          ref: main
 
 #     - name: Install Mkdocs
 #       run: |
@@ -30,6 +32,6 @@ jobs:
           cd docs/news
           git add .
           git commit -m "Update files"
-          git push
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
