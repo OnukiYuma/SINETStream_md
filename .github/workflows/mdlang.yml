@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-#    build:
   file-manipulation:
     runs-on: ubuntu-latest
 
@@ -16,22 +15,17 @@ jobs:
         with:
           ref: main
 
-      - name: Install Mkdocs
+
+      - name: Create LangPages
+        run: python scripts/multi_langpage.py
+
+      - name: Commit and Push Changes
         run: |
-          pip install mkdocs
-          pip install mkdocs-material
-#         pip install mkdocs-static-i18n
-
-#      - name: Create LangPages
-#        run: python scripts/multi_langpage.py
-
-#      - name: Commit and Push Changes
-#        run: |
-#          git config user.name "y.onuki"
-#          git config user.email "onuki@nii.ac.jp"
-#          cd docs/news
-#          git add .
-#          git commit -m "Update files"
-#          git push origin main
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git config user.name "y.onuki"
+          git config user.email "onuki@nii.ac.jp"
+          cd docs/news
+          git add .
+          git commit -m "Update files"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
